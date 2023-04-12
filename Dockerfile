@@ -9,4 +9,4 @@ RUN apt-get install python3-pip -y
 RUN apt install git -y
 RUN git clone https://github.com/thanhchauns2/OnlineTetrisBattleWebsite.git
 RUN python3 -m pip install -r ./OnlineTetrisBattleWebsite/requirements.txt
-RUN python3 ./OnlineTetrisBattleWebsite/manage.py runserver stupid-docker-production.up.railway.app
+RUN python3 ./OnlineTetrisBattleWebsite/manage.py runserver stupid-docker-production.up.railway.app:8000
