@@ -8,5 +8,5 @@ RUN apt install python3.11 -y
 RUN apt-get install python3-pip -y
 RUN apt install git -y
 RUN git clone https://github.com/thanhchauns2/OnlineTetrisBattleWebsite.git
-RUN python3 -m pip install -r requirements.txt
-RUN python3 manage.py runserver
+RUN python3 -m pip install -r ./OnlineTetrisBattleWebsite/requirements.txt
+RUN python3 ./OnlineTetrisBattleWebsite/manage.py runserver
